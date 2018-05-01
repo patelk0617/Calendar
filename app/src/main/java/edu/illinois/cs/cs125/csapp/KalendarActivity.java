@@ -6,15 +6,22 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class CalendarActivity extends AppCompatActivity {
-
+public class KalendarActivity extends AppCompatActivity {
+    Button normalMode;
     Button back;
-    Button kaleMode;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_calendar);
+        setContentView(R.layout.activity_kalendar);
+
+        normalMode = (Button) findViewById(R.id.normalMode);
+        normalMode.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openNormal();
+            }
+        });
 
         back = (Button) findViewById(R.id.back);
         back.setOnClickListener(new View.OnClickListener() {
@@ -24,17 +31,11 @@ public class CalendarActivity extends AppCompatActivity {
             }
         });
 
-        kaleMode = (Button) findViewById(R.id.kaleMode);
-        kaleMode.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openKale();
-            }
-        });
+
     }
 
-    public void openKale() {
-        Intent intent = new Intent(this, KalendarActivity.class);
+    public void openNormal() {
+        Intent intent = new Intent(this, CalendarActivity.class);
         startActivity(intent);
     }
 
@@ -42,6 +43,5 @@ public class CalendarActivity extends AppCompatActivity {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
-
 
 }

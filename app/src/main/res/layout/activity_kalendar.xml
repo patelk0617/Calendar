@@ -6,20 +6,27 @@ xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
 android:orientation="vertical"
-tools:context=".CalendarActivity">
+tools:context=".KalendarActivity"
+android:background="@drawable/kale">
 
 
+<!--<ImageView-->
+<!--android:id="@+id/myImageView"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:src="" />-->
 
 <TextView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="Calendar"
-    android:fontFamily="cursive"
+    android:text="Kalendar"
+    android:fontFamily= "cursive"
     android:textAlignment="center"
     android:textColor="#000"
+    android:background="#1D8348"
     android:textSize="35sp"
     android:layout_marginLeft="147dp"
-    android:layout_marginTop="50dp"
+    android:layout_marginTop="60dp"
     />
 
 <!--app:layout_constraintBottom_toBottomOf="parent"-->
@@ -33,7 +40,8 @@ tools:context=".CalendarActivity">
     android:layout_marginTop="20dp"
     android:layout_marginLeft="50dp"
     android:layout_width="300dp"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_calen">
     <!--tools:layout_editor_absoluteX="42dp"-->
     <!--tools:layout_editor_absoluteY="68dp">-->
 
@@ -43,7 +51,7 @@ tools:context=".CalendarActivity">
         android:layout_height="330dp"
         android:paddingBottom="10dp"
         android:layout_marginLeft="10dp"
-        android:background="@color/colorPrimary"
+        android:background="#1D8348"
         tools:layout_editor_absoluteX="18dp"
         tools:layout_editor_absoluteY="69dp">
 
@@ -51,23 +59,24 @@ tools:context=".CalendarActivity">
 
 </LinearLayout>
 
-    <Button
-        android:id="@+id/back"
-        android:background="@drawable/bg_btn"
-        android:textColor="#000"
-        android:layout_marginLeft="140dp"
-        android:layout_marginTop="20dp"
-        android:paddingLeft="26dp"
-        android:paddingRight="20dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="GO Back" />
+<Button
+    android:id="@+id/back"
+    android:background="@drawable/bg_kooky"
+    android:textColor="#1D8348"
+    android:layout_marginLeft="140dp"
+    android:layout_marginTop="20dp"
+    android:paddingLeft="26dp"
+    android:paddingRight="20dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="GO Back" />
 <!--tools:layout_editor_absoluteX="16dp"-->
 <!--tools:layout_editor_absoluteY="447dp" />-->
 
 <!--<Button-->
     <!--android:id="@+id/toDo"-->
-
+    <!--android:background="@drawable/bg_kooky"-->
+    <!--android:textColor="#1D8348"-->
     <!--android:layout_marginLeft="250dp"-->
     <!--android:layout_marginTop="-49dp"-->
     <!--android:paddingLeft="30dp"-->
@@ -75,20 +84,20 @@ tools:context=".CalendarActivity">
     <!--android:layout_width="wrap_content"-->
     <!--android:layout_height="wrap_content"-->
     <!--android:text="To-Do" />-->
-<!--tools:layout_editor_absoluteX="280dp"-->
+<!--&lt;!&ndash;tools:layout_editor_absoluteX="280dp"&ndash;&gt;-->
 <!--tools:layout_editor_absoluteY="449dp" />-->
 
 <Button
-    android:id="@+id/kaleMode"
-    android:background="@drawable/bg_btn"
-
+    android:id="@+id/normalMode"
+    android:background="@drawable/bg_kooky"
+    android:textColor="#1D8348"
     android:layout_marginLeft="131dp"
     android:layout_marginTop="15dp"
     android:paddingLeft="26dp"
     android:paddingRight="20dp"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="Kale Mode" />
+    android:text="Normal Mode" />
 <!--tools:layout_editor_absoluteX="137dp"-->
 <!--tools:layout_editor_absoluteY="424dp" />-->
 
